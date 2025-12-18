@@ -1,0 +1,16 @@
+Package: mdcBHNU
+Type: Package
+Title: Brown-headed Nuthatch restoration 
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Tim", "Lyons",
+      email = "timothy.lyons@mdc.mo.gov",
+      role = c("aut", "cre")
+    )
+  )
+Description: More about what it does (maybe more than one line).
+    Continuation lines should be indented.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
