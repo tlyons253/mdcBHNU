@@ -1,5 +1,3 @@
-
-
 #' A  wrapper to connect to a motus database
 #'
 #' @param path
@@ -16,10 +14,6 @@ open_motus<-function(path){
   message("Don't forget to close the database connection when you are done")
 
 }
-
-
-
-
 
 
 
@@ -94,9 +88,6 @@ hits.resident<-function(connect,project.id){
   return(out)
 
 }
-
-
-
 
 
 
