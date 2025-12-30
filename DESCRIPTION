@@ -1,7 +1,7 @@
 Package: mdcBHNU
 Type: Package
-Title: Brown-headed Nuthatch restoration 
-Version: 0.1.0
+Title: Brown-headed Nuthatch restoration helper functions
+Version: 0.0.01
 Authors@R: c(
     person(
       "Tim", "Lyons",
@@ -13,5 +13,10 @@ Description: Scripts and how-to for the BHNU project
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    DBI,
+    tidyverse,
+    paletteer
 URL: https://github.com/tlyons253/mdcBHNU
 BugReports: https://github.com/tlyons253/mdcBHNU/issues
+RoxygenNote: 7.3.3
