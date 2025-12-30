@@ -1,3 +1,3 @@
 .onAttach<-function(libname,pkgname){
-  packageStartupMessage("Remeber to Sys.setenv(TZ='UTC') before going further")
+  packageStartupMessage("Remember to Sys.setenv(TZ='UTC') before going further")
 }
