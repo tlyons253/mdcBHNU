@@ -71,12 +71,12 @@
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html" class="external-link">Sys.setenv</a></span><span class="op">(</span>TZ<span class="op">=</span><span class="st">'UTC'</span><span class="op">)</span>  <span class="co"># Always set before opening connections or importing data....UTC avoids issues with time changes due to DST</span></span>
 <span></span>
-<span><span class="fu">open_motus</span><span class="op">(</span><span class="st">'C:/Location/of/motus/database/project-123.motus'</span><span class="op">)</span><span class="op">-&gt;</span><span class="va">bhnu.con</span></span>
+<span><span class="fu"><a href="reference/open_motus.html">open_motus</a></span><span class="op">(</span><span class="st">'C:/Location/of/motus/database/project-123.motus'</span><span class="op">)</span><span class="op">-&gt;</span><span class="va">bhnu.con</span></span>
 <span></span>
 <span><span class="fu">hit.resident</span><span class="op">(</span><span class="va">bhnu.con</span>, project.id<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span><span class="op">)</span><span class="op">-&gt;</span><span class="va">bhnu.list</span> </span>
 <span><span class="co"># are mike's towers still active? could add their ID's here if it's just ones local to MO.</span></span>
 <span></span>
-<span><span class="fu">close_motus</span><span class="op">(</span><span class="va">bhnu.con</span><span class="op">)</span> <span class="co"># close the connection</span></span>
+<span><span class="fu"><a href="reference/close_motus.html">close_motus</a></span><span class="op">(</span><span class="va">bhnu.con</span><span class="op">)</span> <span class="co"># close the connection</span></span>
 <span></span>
 <span><span class="va">bhnu.raw</span><span class="op">&lt;-</span><span class="va">bhnu.list</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
 <span></span>
