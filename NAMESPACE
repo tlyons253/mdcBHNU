@@ -1,1 +1,2 @@
 exportPattern("^[[:alpha:]]+")
+.onAttach("Remeber to Sys.setenv(TZ='UTC') before going further")
