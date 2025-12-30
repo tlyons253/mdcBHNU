@@ -24,12 +24,14 @@ your computer.
 ``` r
 library(mdcBHNU)
 
-open.motus('C:/Location/of/motus/database/project-123.motus')->bhnu.con
+Sys.setenv(TZ='UTC')  # Always set before opening connections or importing data....UTC avoids issues with time changes due to DST
+
+open_motus('C:/Location/of/motus/database/project-123.motus')->bhnu.con
 
 hit.resident(bhnu.con, project.id=c(123))->bhnu.list 
 # are mike's towers still active? could add their ID's here if it's just ones local to MO.
 
-close.motus(bhnu.con) # close the connection
+close_motus(bhnu.con) # close the connection
 
 bhnu.raw<-bhnu.list[[1]]
 
