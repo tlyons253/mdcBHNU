@@ -7,11 +7,6 @@
 
 <!-- badges: end -->
 
-Before you can install this package, you will need to create a github
-account. It’s free to do. Let Tim know once you do and he will invite
-you as a collaborator. Otherwise you will not be able to install the
-package as it is in a non-public repository
-
 ## Installation
 
 You can install mdcBHNU from [GitHub](https://github.com/) with:
@@ -23,7 +18,11 @@ pak::pak("tlyons253/mdcBHNU") #or
 devtools::install_github('tlyons253/mdcBHNU')
 ```
 
-## Example wokflow
+The plotting functions will only work with the MDC nuthatch project as
+of now, but others should be general enough to work with other .motus
+projects.
+
+## Example workflow
 
 You might do this to get and plot tag hits. You may need to change the
 path to your copy of the .motus file or depending on how it is mapped on
@@ -34,7 +33,7 @@ library(mdcBHNU)
 
 open.motus('C:/Location/of/motus/database/project-123.motus')->bhnu.con
 
-hit.resident(bhnu.con, project.id=c(750))->bhnu.list 
+hit.resident(bhnu.con, project.id=c(123))->bhnu.list 
 # are mike's towers still active? could add their ID's here if it's just ones local to MO.
 
 close.motus(bhnu.con) # close the connection
