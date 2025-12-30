@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-open.motus<-function(path){
+open_motus<-function(path){
   DBI::dbConnect(RSQLite::SQLite(),
                  path)
 
@@ -108,7 +108,7 @@ hits.resident<-function(connect,project.id){
 #' @export
 #'
 #' @examples
-close.motus<-function(my.conn){
+close_motus<-function(my.conn){
   DBI::dbDisconnect(my.conn)
 
 }
