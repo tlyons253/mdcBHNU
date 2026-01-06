@@ -10,7 +10,6 @@
 #' the probability a nest survives to produce fledglings
 #' @param N the intial abundance
 #'
-#' @internal
 #'
 #'
 fxn.1year<-function(phi.f=0.5,
