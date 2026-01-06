@@ -76,7 +76,7 @@ bhnu.pop.sim<-function(N.sim,N.female,N.years,ext.thresh=0,surv.params,breed.par
 
 
   else{
-    beta.parms<-get_betadist(surv.params[1],surv.params[2])
+    beta.parms<-MDChelp::get_betadist(surv.params[1],surv.params[2])
 
     phi.draws<-matrix(data=rbeta(N.sim*(N.years-1),
                                  beta.parms[1],
@@ -93,7 +93,7 @@ bhnu.pop.sim<-function(N.sim,N.female,N.years,ext.thresh=0,surv.params,breed.par
 
 
   else{
-    beta.parms<-get_betadist(breed.params[1],breed.params[2])
+    beta.parms<-MDChelp::get_betadist(breed.params[1],breed.params[2])
 
     breed.draws<-matrix(data=rbeta(N.sim*(N.years-1),
                                    beta.parms[1],
@@ -112,7 +112,7 @@ bhnu.pop.sim<-function(N.sim,N.female,N.years,ext.thresh=0,surv.params,breed.par
 
 
   else{
-    beta.parms<-get_betadist(nest.params[1],nest.params[2])
+    beta.parms<-MDChelp::get_betadist(nest.params[1],nest.params[2])
 
     nest.draws<-matrix(data=rbeta(N.sim*(N.years-1),
                                   beta.parms[1],

@@ -16,7 +16,8 @@ LazyData: true
 Imports:
     DBI,
     tidyverse,
-    paletteer
+    paletteer,
+    MDChelp
 URL: https://github.com/tlyons253/mdcBHNU, https://tlyons253.github.io/mdcBHNU/
 BugReports: https://github.com/tlyons253/mdcBHNU/issues
 RoxygenNote: 7.3.3
