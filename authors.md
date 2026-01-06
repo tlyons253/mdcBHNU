@@ -9,14 +9,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/tlyons253/mdcBHNU/blob/master/DESCRIPTION)
 
-Lyons T (2025). *mdcBHNU: Brown-headed Nuthatch restoration helper
+Lyons T (2026). *mdcBHNU: Brown-headed Nuthatch restoration helper
 functions*. R package version 0.0.01,
 <https://github.com/tlyons253/mdcBHNU>.
 
     @Manual{,
       title = {mdcBHNU: Brown-headed Nuthatch restoration helper functions},
       author = {Tim Lyons},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.01},
       url = {https://github.com/tlyons253/mdcBHNU},
     }
