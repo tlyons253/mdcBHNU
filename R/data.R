@@ -101,7 +101,7 @@ hits.resident<-function(connect,project.id){
 #'
 #' @examples
 close_motus<-function(my.conn){
-  DBI::dbDisconnect(my.conn)
+  DBI::dbDisconnect(conn=my.conn)
 
 }
 
