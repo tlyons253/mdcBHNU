@@ -52,7 +52,7 @@ hits.resident<-function(connect,project.id){
 
   tbl(connect,'alltags')%>%collect()->hits.tmp
 
-  if(missing(proj.id)){
+  if(missing(project.id)){
     tbl(connect,'recvDeps')%>%
       collect()->deploy.dat}
 
