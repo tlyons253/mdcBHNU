@@ -9,7 +9,9 @@
 #' @examples
 open_motus<-function(path){
   DBI::dbConnect(RSQLite::SQLite(),
-                 path)
+                 path)->con
+
+  return(con)
 
   message("Don't forget to close the database connection when you are done")
 
