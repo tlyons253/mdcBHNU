@@ -47,7 +47,8 @@ open_motus<-function(path){
 #'  my.hits<-tmp.list[[1]] #get the hits table
 
 hits.resident<-function(connect,project.id){
-  tbl(my.con,'alltags')%>%collect()->hits.tmp
+
+  tbl(connect,'alltags')%>%collect()->hits.tmp
 
   if(missing(proj.id)){
     tbl(connect,'recvDeps')%>%
